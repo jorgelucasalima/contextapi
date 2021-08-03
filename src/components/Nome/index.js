@@ -1,10 +1,19 @@
+import { useContext } from "react"
+import { UserContext } from "../../contexts/user"
 
-function Nome({ nome, mudarNome }) {
+
+
+
+function Nome() {
+
+    const {alunos} = useContext(UserContext)
+
+
     return(
         <div>
-            <span style={{ color: '#FF0000'}}>Bem vindo: {nome}</span>
-            <br/>
-            <button onClick={ () => mudarNome('Lucas') }>Trocar nome</button>
+            <span style={{ color: '#FF0000'}}>Bem vindo: {alunos}</span>
+            <button onClick={()=> setAlunos('Lucas lima')}>trocar nome</button>
+            
         
         </div>
     )

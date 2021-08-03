@@ -1,11 +1,11 @@
 import Nome from "../Nome"
 
 
-function Alunos({ nome, mudarNome }) {
+function Alunos() {
     return(
         <div>
             <h2>Compoment Alunos</h2>
-            <Nome nome={nome} mudarNome={mudarNome}/>
+            <Nome />
         </div>
     )
 }
